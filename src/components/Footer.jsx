@@ -5,7 +5,7 @@ export default async function Footer() {
     return (
     
 
-        <footer className="bg-gray-100 py-8 dark:bg-gray-800">
+        <footer className="bg-gray-100 py-8 dark:bg-gray-800  ">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="space-y-4">
@@ -115,7 +115,7 @@ export default async function Footer() {
               <div className="space-y-4 md:col-span-2 lg:col-span-1">
                 <h3 className="text-lg font-semibold">About</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                This is a blog app built with Next.js and Tailwind CSS. It features a modern and responsive design with a focus on readability and accessibility.
+                This is a blog app built with Next.js and Tailwind CSS for . It features a modern and responsive design with a focus on readability and accessibility.
                 </p>
               </div>
             </div>

@@ -12,7 +12,7 @@ import {
 import app from "@/utils/firebase";
 //------------------------------------------------------
 
-export default function PostCreat(props) {
+export default function PostCreat() {
 const [postData,setPostData] = useState({ title: '', author: '', content: '' })
   
 

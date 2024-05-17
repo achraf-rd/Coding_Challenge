@@ -1,32 +1,40 @@
 import Post from '@/models/Post'
 import connectDB from '@/utils/connectDb'
 
-
-
-export async function getPosts(page,limit,sortOrder = 'desc',sortBy='createdAt') {
+export async function getPosts(page, limit,search = '', sortOrder = 'desc', sortBy = 'createdAt') {
     try {
         await connectDB();
-                    const posts = await Post.find()
-                                            .sort({ [sortBy]: sortOrder }) // Sorting
-                                            .skip((page - 1) * limit)
-                                            .limit(limit)
-                                            .exec();
-                     const count = await Post.countDocuments();
 
-                return {
-                success: true,
-                data: posts,
-                total: count,
-                pages: Math.ceil(count / limit),
-                };
-        
-        
+        // Construct the search query
+        const searchQuery = search
+            ? {
+                $or: [
+                    { title: { $regex: search, $options: 'i' } },
+                    { content: { $regex: search, $options: 'i' } },
+                    { author: { $regex: search, $options: 'i' } }
+                ]
+            }
+            : {};
+
+        const posts = await Post.find(searchQuery)
+            .sort({ [sortBy]: sortOrder })
+            .skip((page - 1) * limit)
+            .limit(limit)
+            .exec();
+        const count = await Post.countDocuments(searchQuery);
+
+        return {
+            success: true,
+            data: posts,
+            total: count,
+            pages: Math.ceil(count / limit),
+        };
     } catch (error) {
-     console.error(error);
-     return  {msg : "Error while fetching posts" , errMsg : error.message} 
+        console.error(error);
+        return { msg: "Error while fetching posts", errMsg: error.message };
     }
- 
 }
+
 export async function getPostsById(id) {
     try {
         await connectDB();

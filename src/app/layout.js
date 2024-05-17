@@ -17,15 +17,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body className={inter.className}>
-        <div className ='w-full mt-0 fixed '>
-      <Topbar/>
-          </div>
-          <div className ='pt-10 '>
-      <ToastContainer />
-        {children}
-          </div>
-      <div className ='w-full mb-0 '>
-          <Footer/>
+      <div className="flex flex-col min-h-screen">
+          <Topbar />
+          <main className="flex-grow pt-10">
+            <ToastContainer />
+            {children}
+          </main>
+          <Footer />
         </div>
         </body>
     </html>

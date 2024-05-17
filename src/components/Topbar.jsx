@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default async function Topbar() {
     
@@ -5,8 +6,8 @@ export default async function Topbar() {
     return (
       
         
-        <header className="flex h-16 items-center justify-between px-4 md:px-6 dark:bg-gray-950 ">
-          <a className="flex items-center gap-2" href="#">
+        <header className="flex h-16 items-center justify-between px-4 md:px-6 dark:bg-gray-950 z-50 ">
+          <Link className="flex items-center gap-2" href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -22,7 +23,7 @@ export default async function Topbar() {
               <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
             </svg>
             <span className="text-lg font-semibold">Achraf Blog</span>
-          </a>
+          </Link>
           <div className="relative">
             <svg
               xmlns="http://www.w3.org/2000/svg"

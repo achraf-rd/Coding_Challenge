@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <ToastContainer />
         {children}
           </div>
-      <div className ='w-full '>
+      <div className ='w-full mb-0 '>
           <Footer/>
         </div>
         </body>

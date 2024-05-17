@@ -58,3 +58,4 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ### For the full documentation check this document  :
  https://docs.google.com/document/d/1TkBpI_5-Y32KAAxQ8SJwwbMV0KKVNbk5x0Dt13Kch5M/edit?usp=sharing 
+![image](https://github.com/achraf-rd/Coding_Challenge/assets/157323348/a1c8de16-8c82-48b0-abb8-b1ad57068b98)

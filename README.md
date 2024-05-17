@@ -61,5 +61,4 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ![image](https://github.com/achraf-rd/Coding_Challenge/assets/157323348/a1c8de16-8c82-48b0-abb8-b1ad57068b98)
 
-### deployed website for demo  :
-https://blog-challenge-17amdzg1s-achrafrachid51-gmailcoms-projects.vercel.app/
+

@@ -5,7 +5,6 @@ import Pagination from "@/components/Pagination";
 import { getPosts } from '@/_actions/postActions';
 
 export const revalidate = 0;
-export const dynamic = 'force-dynamic'
 
 export default async function Home({ searchParams }) { 
   const { currentPage = 1, limit = 6, search = '' } = searchParams;

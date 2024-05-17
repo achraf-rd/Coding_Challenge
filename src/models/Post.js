@@ -11,6 +11,10 @@ const postSchema = new Schema(
       type: String,
       required: true,
     },
+    author : {
+      type : String,
+      required : false
+    },
     thumbnail: String,
     profileImage: String,
     published: {

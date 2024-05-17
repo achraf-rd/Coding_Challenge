@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from "next/link";
 import DeletePostButton from '@/components/DeletePostButton'; // Import the client component
 
-export default async function Page({params}) {
+export default async function PostView({params}) {
   const data = await getPostsById(params.id)
   if (!data){
     return (

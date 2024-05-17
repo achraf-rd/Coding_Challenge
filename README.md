@@ -1,8 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Overview
+
+This is a blog application built with the Next.js framework using the app router and Tailwind CSS for styling. The app allows users to create, view, update, and delete blog posts, with support for image uploads via Firebase. MongoDB is used as the database, and Mongoose is employed as the Object Document Mapper (ODM).
+
+
+* **Next.js:** A React-based framework for server-rendered and statically generated web applications.
+* **Next.js App Router:** Enables client-side routing for a seamless user experience.
+* **Tailwind CSS:** A utility-first CSS framework for rapid and responsive styling.
+* **Firebase:** A Google-backed platform offering various services, including user authentication and storage (for image uploads in this project).
+* **MongoDB:** A NoSQL database for flexible data storage.
+* **Mongoose:** An ODM (Object Document Mapper) that simplifies interactions between MongoDB and your application.
+
+## Installation
+
+**Prerequisites:**
+
+* Node.js and npm (or yarn) installed on your system.
+* .env file with database connection link existe in the repo for this challenge. (variable name : DB_URL )
+
+
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:**
+
+```bash
+git clone 
+```
+2. **Enter the file CODING_CHALLENGE**
+   
+```bash
+cd CODING_CHALLENGE
+```
+3. **Install all packages**
+```bash
+npm install
+```
+3. **Run developement script**
 
 ```bash
 npm run dev
@@ -22,15 +56,5 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### For the full documentation check this document  :
+ https://docs.google.com/document/d/1TkBpI_5-Y32KAAxQ8SJwwbMV0KKVNbk5x0Dt13Kch5M/edit?usp=sharing 

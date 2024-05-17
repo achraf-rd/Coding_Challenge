@@ -115,7 +115,7 @@ export default async function Footer() {
               <div className="space-y-4 md:col-span-2 lg:col-span-1">
                 <h3 className="text-lg font-semibold">About</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                This is a blog app built with Next.js and Tailwind CSS for . It features a modern and responsive design with a focus on readability and accessibility.
+                This is a blog app built with Next.js and Tailwind CSS for fullstack coding challenge (thinkable). It features a modern and responsive design with a focus on readability and accessibility.
                 </p>
               </div>
             </div>
